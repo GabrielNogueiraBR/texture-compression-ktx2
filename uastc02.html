@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Texture Compression Viewer</title>
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+    <script src="./stats.js"></script>
+    <script src="./index.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="root">
+      <model-viewer
+        id="model-viewer-element"
+        alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum"
+        src="./modelos/UASTC/modelo-level2.glb"
+        ar
+        ar-modes="scene-viewer"
+        environment-image="https://modelviewer.dev/shared-assets/environments/moon_1k.hdr"
+        shadow-intensity="1"
+        camera-controls
+        touch-action="pan-y"
+      ></model-viewer>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="/index.html">Index</a></li>
+        <li><a href="/uastc00.html">Level 0 (UASTC)</a></li>
+        <li><a href="/uastc01.html">Level 1 (UASTC)</a></li>
+        <li><a href="/uastc02.html">Level 2 (UASTC)</a></li>
+        <li><a href="/uastc03.html">Level 3 (UASTC)</a></li>
+        <li><a href="/uastc04.html">Level 4 (UASTC)</a></li>
+        <li><a href="/etc1s00.html">Level 0 (ETC1S)</a></li>
+        <li><a href="/etc1s03.html">Level 3 (ETC1S)</a></li>
+        <li><a href="/etc1s05.html">Level 5 (ETC1S)</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
